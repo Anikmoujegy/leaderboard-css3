@@ -60,7 +60,7 @@ header{
 
 /* main section css */
 main > *{
-    margin: 80px 15%;
+    margin: 80px 15% 40px 15%;
 }
 /* top players css */
 .top-players{
@@ -75,10 +75,10 @@ main > *{
     display: flex;
     margin: 5% 3%;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 .top-players-div:hover, .top-blogs-div:hover, .latest-courses-div:hover{
-    background-color: rgb(196, 196, 196);
+    background-color: #c4c4c4;
     border-radius: 10px;
 }
 .top-players-img{
@@ -99,7 +99,7 @@ main > *{
 }
 .top-blogs-div{
     margin: 1%;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     height: 75%;
     width: 75%;
@@ -115,7 +115,7 @@ main > *{
 }
 /* footer css */
 footer{
-    margin: 10px 15%;
+    margin: 40px 15% 20px 15%;
 }
 /* latest courses section css */
 .latest-courses{
@@ -126,7 +126,8 @@ footer{
 }
 .latest-courses-div{
     margin: 10px 10px 30px 10px;
-    padding: 20px;
+    margin-left: 20px;
+    padding: 30px;
 }
 .latest-courses-img{
     height: 110px;
@@ -145,7 +146,7 @@ footer{
     position: relative;
 }
 .latest-courses-min-img{
-    margin-right: 1px;
+    margin-right: 0px;
     position: relative;
     top: 3px;
     height: 12px;
@@ -153,16 +154,19 @@ footer{
 }
 .latest-courses-min-img-clock{
     position: absolute;
-    top: 12%;
+    top: 2px;
     height: 18px;
     width: 18px;
 }
 .latest-courses-p{
-    margin-left: 5px;
+    margin-top: 2px;
+    margin-left: 12px;
     color: gray;
+    font-size: 13px;
 }
 .latest-courses-sec-p{
     margin-left: 20px;
+    font-size: 14px;
 }
 .latest-courses-min-div{
     background-color: #eee1e1;
@@ -172,6 +176,7 @@ footer{
     padding: 1px 10px;
     border-radius: 20px;
 }
+
 /* creating layouts */
 body{
     display: grid;
@@ -216,14 +221,18 @@ body{
     .latest-courses-main-div{
         flex-direction: column;
     }
+    .latest-courses-min-div{
+        margin-left: 15%;
+    }
     footer, main > *{
-        margin: 20px 10%;
+        margin: 20px 10% 10px 10%;
     }
     section > h2{
         text-align: center;
     }
+
  }
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1092px) {
     .logo{
         margin-left: 40px;
     }
@@ -239,10 +248,22 @@ body{
     .latest-courses-main-div{
         flex-direction: column;
     }
-    footer, main > *{
-        margin: 60px 10%;
+    main > *{
+        margin: 40px 10% 20px 10%;
+    }
+    footer{
+        margin: 20px 10% 40px 10%;
     }
     section > h2{
         text-align: center;
+    }
+    .latest-courses-div{
+        display: flex;
+    }
+    .latest-courses-img{
+        margin-right: 20px;
+    }
+    .latest-courses-min-div{
+        margin-left: 5%;
     }
  }
